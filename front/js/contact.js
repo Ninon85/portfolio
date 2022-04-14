@@ -19,7 +19,7 @@ formContact.addEventListener("submit", (e) => {
 		body: JSON.stringify(data),
 	};
 	spinner.removeAttribute("hidden");
-	fetch(" https://phylling-web-dev.herokuapp.com/api/mail", option)
+	fetch("https://phylling-web-dev.herokuapp.com/api/mail", option)
 		.then((res) => {
 			spinner.setAttribute("hidden", "");
 			if (res.status === 200) {
