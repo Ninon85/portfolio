@@ -1,0 +1,35 @@
+.main-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    height: 10vh;
+    padding: 0 3%;
+    margin-top: 16px;
+
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0;
+
+        @include desktop {
+            width: 35%;
+        }
+    }
+}
+
+.main-footer a {
+    text-decoration: none;
+    color: inherit;
+
+    .fab {
+        font-size: 1.5em;
+    }
+}
+
+.main-footer li:hover {
+    transform: scale(2);
+}

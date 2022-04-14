@@ -1,0 +1,72 @@
+.presentation__whoAmI,
+.presentation__services,
+.presentation__stack {
+    display: flex;
+    flex-direction: column;
+}
+
+.presentation__whoAmI__container {
+
+
+    p {
+
+        text-align: justify;
+        width: 96%;
+
+        @include desktop {
+            width: 50%;
+        }
+    }
+}
+
+.presentation__whoAmI__pic-container {
+    width: 80px;
+    margin-right: 1%;
+    float: left;
+    border-radius: 100%;
+    box-shadow: -5px -5px 5px 5px black;
+    // height: 50px;
+
+
+    img {
+        width: 100%;
+        object-fit: contain;
+        border-radius: 100%;
+    }
+
+
+}
+
+.presentation h2,
+p {
+    animation: fadeinX 2000ms ease-in-out 1 alternate both;
+}
+
+.presentation__whoAmI {
+    animation: fadeinX 2000ms 250ms ease-in-out 1 alternate both;
+}
+
+.presentation__services {
+    animation: fadeinX 2000ms 500ms ease-in-out 1 alternate both;
+}
+
+.presentation__stack {
+    animation: fadeinX 2000ms 750ms ease-in-out 1 alternate both;
+}
+
+@keyframes fadeinX {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 0.2;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="FR-fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Phylling, contactez moi ! Développement web, photos et logos en région Pays de la Loire">
+    <!--social fb OG-->
+    <meta property="og:title" content="Phylling | Contact" />
+    <meta property="og:description" content="Me contacter" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ninon85.github.io/sitePhoto_perso/contact.html" />
+    <meta property="og:image" content="https://ninon85.github.io/sitePhoto_perso/images/photos/panorama-douy.jpg" />
+    <meta property="og:site_name" content="Phylling web dev" />
+    <!--twitter-->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@phylling8377" />
+    <meta name="twitter:creator" content="@phylling8377" />
+    <!--logo navigateur-->
+    <link rel="icon" type="image/png" href="./images/logo/favicon.png" />
+    <script defer src="./js/contact.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- <script defer src="https://www.googletagmanager.com/gtag/js?id=G-PBGHJJT48B"></script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-PBGHJJT48B');
+    </script> -->
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Merienda&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./sass/style.css">
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Phylling | Contact</title>
+</head>
+
+<body>
+    <div id="main-wrapper">
+        <header class="main-header">
+            <div class="main-header__box-logo">
+                <img class="main-header__box-logo__sign" src="./images/logo/logo-phylling.png" alt="Logo Phylling">
+            </div>
+            <nav class="main-header__nav">
+                <a href="index.html">Accueil</a>
+                <a href="./les_photos.html">Les Photos</a>
+                <a href="./logos.html">Les logos</a>
+                <a href="#">sites web</a>
+            </nav>
+        </header>
+        <section class="contact">
+            <h1>Contactez-moi pour vos projets web !</h1>
+            <form>
+                <div class="form-container">
+                    <label for="name">Votre Nom</label>
+                    <input type="text" id="name" required>
+                    <br />
+                    <label for="mail">Votre adresse mail</label>
+                    <input type="email" id="mail" required>
+                    <!-- <span class="content-mail"></span> -->
+                    <br />
+                    <label for="message">Votre message</label>
+                    <textarea id="message" required></textarea>
+                    <br />
+                    <input type="submit" value="Envoyer" id="submit">
+                </div>
+            </form>
+            <div hidden id="spinner"></div>
+        </section>
+        <footer class="main-footer">
+            <ul>
+                <li class="footer__contact">
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li class="footer__instagram" aria-label="Retrouvez-moi sur Instagram"
+                    title="Retrouvez-moi sur Instagram">
+                    <a href="https://www.instagram.com/phylling01/"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li class="footer__facebook" aria-label="Retrouvez-moi sur Facebook" title="Retrouvez-moi sur Facebook">
+                    <a href="https://www.facebook.com/NinonNinooon/"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li class="footer__twitter" aria-label="Retrouvez-moi sur Twitter" title="Retrouvez-moi sur Twitter">
+                    <a href="https://twitter.com/phylling8377"><i class="fab fa-twitter"></i></a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+
+</body>
+
+</html>
