@@ -1,18 +1,11 @@
 const express = require("express");
+const helmet = require("helmet");
 
-// const nodemailer = require("nodemailer");
-// const path = require("path");
-// const helmet = require("helmet");
-//import dotenv
-// require("dotenv").config();
 //-----------------------
 //router
 //-----------------------
 const mailRoutes = require("./routes/mail.route");
-// const userRoutes = require("./routes/user");
-// const postRoutes = require("./routes/post");
-// const likeRoutes = require("./routes/like");
-// const commentRoutes = require("./routes/comment");
+
 //-----------------------//-----------------------//-----------------------//-----------------------//-----------------------//-----------------------
 
 //create express application
@@ -33,15 +26,16 @@ app.use((req, res, next) => {
 	);
 	next();
 });
-// app.use(
-// 	helmet({
-// 		//allow frontend and backend to share resources (ports are different)
-// 		crossOriginResourcePolicy: false,
-// 	})
-// );
+app.use(
+	helmet({
+		//allow frontend and backend to share resources (ports are different)
+		crossOriginResourcePolicy: false,
+	})
+);
 
 // //to recover body request for read json files (convert into js object)
 app.use(express.json());
+app.use(express.static("front"));
 
 //-----------------------------------
 //Roads API
