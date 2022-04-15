@@ -285,6 +285,8 @@ input[type="radio"]:checked + label.btn::after {
   position: fixed;
   top: 0;
   z-index: 1;
+  padding: 0 3%;
+  position: relative;
 }
 
 .main-header__box-logo {
@@ -309,15 +311,21 @@ input[type="radio"]:checked + label.btn::after {
 }
 
 .main-header__nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 75%;
+  display: none;
+}
+
+@media screen and (min-width: 857px) {
+  .main-header__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 75%;
+  }
 }
 
 .main-header__nav a {
@@ -328,6 +336,45 @@ input[type="radio"]:checked + label.btn::after {
 .main-header__nav a:hover {
   -webkit-transform: scale(2);
           transform: scale(2);
+}
+
+.main-header__burger-container .fa {
+  color: #ffffff;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.main-header__burger-container .fa:active {
+  color: red;
+}
+
+@media screen and (min-width: 857px) {
+  .main-header__burger-container .fa {
+    display: none;
+  }
+}
+
+.toggle-nav {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 25vh;
+  width: 100%;
+  right: 0;
+  top: 10vh;
+  background: #919190;
+  -webkit-transition: all 3s;
+  transition: all 3s;
 }
 
 .main-footer {
@@ -589,7 +636,7 @@ input[type="radio"]:checked + label.btn::after {
   }
 }
 
-#target {
+.target {
   margin-left: 0.2rem;
   -webkit-animation: animColor 0.8s linear infinite;
           animation: animColor 0.8s linear infinite;
@@ -598,7 +645,7 @@ input[type="radio"]:checked + label.btn::after {
   color: teal;
 }
 
-#target::after {
+.target::after {
   content: "";
   position: absolute;
   height: 3rem;

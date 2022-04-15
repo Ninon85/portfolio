@@ -1,4 +1,6 @@
 .main-header {
+    // @include desktop {
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -8,29 +10,45 @@
     position: fixed;
     top: 0;
     z-index: 1;
+    padding: 0 3%;
+    position: relative;
+    // }
 
 
     &__box-logo {
+        // @include desktop {
+
         width: 20%;
         height: 100%;
         display: flex;
         justify-content: flex-start;
         align-items: center;
+        // }
 
         &__sign {
+            // @include desktop {
+
             width: 100%;
             height: 100%;
             object-fit: contain;
+            // }
         }
 
     }
+
+
 }
 
 .main-header__nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 75%;
+    display: none;
+
+    @include desktop {
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 75%;
+    }
 }
 
 .main-header__nav a {
@@ -40,4 +58,35 @@
     &:hover {
         transform: scale(2);
     }
+}
+
+.main-header__burger-container .fa {
+    color: #ffffff;
+    font-size: 1.2em;
+    cursor: pointer;
+
+    &:active {
+        color: red;
+    }
+
+
+    @include desktop {
+        display: none;
+    }
+}
+
+.toggle-nav {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 25vh;
+    width: 100%;
+    right: 0;
+    top: 10vh;
+    background: #919190;
+    transition: all 3s;
+
+
 }

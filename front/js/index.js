@@ -1,5 +1,5 @@
 //Texte animé
-const target = document.getElementById("target");
+const target = document.querySelector(".target");
 let array = ["développeuse", "photographe", "créative"];
 let wordIndex = 0;
 let letterIndex = 0;
