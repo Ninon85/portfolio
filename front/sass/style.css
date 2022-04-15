@@ -435,6 +435,12 @@ input[type="radio"]:checked + label.btn::after {
           flex-direction: column;
 }
 
+.presentation__whoAmI__container {
+  background: rgba(39, 39, 39, 0.2);
+  border-radius: 90px/20px;
+  padding: 1%;
+}
+
 .presentation__whoAmI__container p {
   text-align: justify;
   width: 96%;
@@ -448,6 +454,7 @@ input[type="radio"]:checked + label.btn::after {
 
 .presentation__whoAmI__pic-container {
   width: 80px;
+  height: 120px;
   margin-right: 1%;
   float: left;
   border-radius: 100%;
@@ -457,9 +464,20 @@ input[type="radio"]:checked + label.btn::after {
 
 .presentation__whoAmI__pic-container img {
   width: 100%;
+  height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
   border-radius: 100%;
+}
+
+.presentation h2 {
+  margin-bottom: 5px;
+}
+
+.underline-title {
+  width: 50px;
+  border: 2px dashed #ffffff;
+  margin-bottom: 40px;
 }
 
 .presentation p {

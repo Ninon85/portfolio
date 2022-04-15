@@ -6,6 +6,9 @@
 }
 
 .presentation__whoAmI__container {
+    background: rgba($color: #272727, $alpha: 0.2);
+    border-radius: 90px/20px;
+    padding: 1%;
 
 
     p {
@@ -21,15 +24,17 @@
 
 .presentation__whoAmI__pic-container {
     width: 80px;
+    height: 120px;
     margin-right: 1%;
     float: left;
     border-radius: 100%;
     box-shadow: -5px -5px 5px 5px black;
-    // height: 50px;
+
 
 
     img {
         width: 100%;
+        height: 100%;
         object-fit: contain;
         border-radius: 100%;
     }
@@ -37,8 +42,20 @@
 
 }
 
+.presentation h2 {
+    margin-bottom: 5px;
+}
+
+.underline-title {
+    width: 50px;
+    border: 2px dashed #ffffff;
+    margin-bottom: 40px;
+}
+
 .presentation p {
     animation: fadeinX 2000ms ease-in-out 1 alternate both;
+
+
 }
 
 .presentation__whoAmI {
