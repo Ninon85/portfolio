@@ -1,6 +1,4 @@
 .main-header {
-    // @include desktop {
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -11,27 +9,26 @@
     top: 0;
     z-index: 1;
     padding: 0 3%;
-    position: relative;
-    // }
+
 
 
     &__box-logo {
-        // @include desktop {
+
 
         width: 20%;
         height: 100%;
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        // }
+
 
         &__sign {
-            // @include desktop {
+
 
             width: 100%;
             height: 100%;
             object-fit: contain;
-            // }
+
         }
 
     }

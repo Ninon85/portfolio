@@ -286,7 +286,6 @@ input[type="radio"]:checked + label.btn::after {
   top: 0;
   z-index: 1;
   padding: 0 3%;
-  position: relative;
 }
 
 .main-header__box-logo {
