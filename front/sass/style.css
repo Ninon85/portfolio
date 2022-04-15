@@ -367,13 +367,11 @@ input[type="radio"]:checked + label.btn::after {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  height: 25vh;
+  height: 30vh;
   width: 100%;
   right: 0;
   top: 10vh;
-  background: #919190;
-  -webkit-transition: all 3s;
-  transition: all 3s;
+  background: rgba(39, 39, 39, 0.85);
 }
 
 .main-footer {
