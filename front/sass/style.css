@@ -66,6 +66,10 @@ a:focus {
   overflow-x: hidden;
 }
 
+strong {
+  font-weight: normal;
+}
+
 input[type="radio"] {
   display: none;
 }

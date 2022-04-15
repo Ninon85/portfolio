@@ -22,11 +22,8 @@ body {
 h1,
 h2 {
     font-family: 'Birthstone', cursive;
-    // align-self: flex-start;
     font-size: 2.5em;
-    // margin-right: 2%;
-    // margin-bottom: 0;
-    // margin-left: 2%;
+
 
 
 }
@@ -78,4 +75,8 @@ a {
     flex-direction: column;
     width: 100%;
     overflow-x: hidden;
+}
+
+strong {
+    font-weight: normal;
 }
