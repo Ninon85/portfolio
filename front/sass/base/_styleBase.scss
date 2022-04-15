@@ -9,6 +9,8 @@ body {
     background: #B7B7B7
 }
 
+
+
 #main-wrapper {
     margin: auto;
     width: 100%;
@@ -69,4 +71,8 @@ a {
 .presentation,
 .pic-presentation {
     padding: 2%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow-x: hidden;
 }
