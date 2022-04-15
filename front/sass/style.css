@@ -7,6 +7,7 @@ body {
   margin: 0;
   width: auto;
   background: #B7B7B7;
+  position: relative;
 }
 
 #main-wrapper {
@@ -17,8 +18,6 @@ body {
 h1,
 h2 {
   font-family: 'Birthstone', cursive;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
   font-size: 2.5em;
 }
 
@@ -656,21 +655,16 @@ input[type="radio"]:checked + label.btn::after {
 }
 
 .contact {
-  height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
   padding: 0 4% 0 4%;
-}
-
-h1 {
-  font-size: 2.5em;
 }
 
 form {
@@ -678,11 +672,11 @@ form {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: left;
-  -ms-flex-pack: left;
-  justify-content: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
 }
 
@@ -692,8 +686,11 @@ form {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 70vh;
   width: 100%;
 }
 
